@@ -25,8 +25,7 @@
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  background: var(--bg-url) no-repeat center/cover;
 }
 
 body * {
@@ -124,19 +123,14 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 16px 24px;
-
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
   border-radius: 8px;
-
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-
   text-decoration: none;
   font-weight: 500;
-
   transition: background 0.2s;
 }
 
@@ -199,6 +193,30 @@ ul li a {
   margin-left: 20px;
 }
 
+#artigo-icon {
+  max-width: 26px;
+}
+
+#artigo-link {
+  margin-left: 20px;
+}
+
+#spotify-icon {
+  max-width: 30px;
+}
+
+#spotify-link {
+  margin-left: 20px;
+}
+
+#linkedin-icon {
+  max-width: 28px;
+}
+
+#linkedin-link {
+  margin-left: 20px;
+}
+
 /* pseudo-selector */
 ul li a:hover {
   background: var(--surface-color-hover);
@@ -209,9 +227,7 @@ ul li a:hover {
 #social-links {
   display: flex;
   justify-content: center;
-
   padding: 24px 0;
-
   font-size: 24px;
 }
 
@@ -220,7 +236,6 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-
   transition: background 0.2s;
   border-radius: 50%;
 }
@@ -233,6 +248,7 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+  margin-top: 50px;
 }
 
 /* media queries */
