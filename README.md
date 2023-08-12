@@ -1,5 +1,6 @@
-# link-tray
-A single page with links to the customer's social media pages.
+<h1 align="center">link-tray</h1> 
+
+<p align="center">A single page with links to the customer's social media pages</p>
 
 
 <div align="center">
