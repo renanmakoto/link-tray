@@ -2,6 +2,7 @@
 
 <p align="center">A single page with links to the customer's social media pages</p>
 
+<p align="center">You may have a look at the application through the link below: </p>
 
 <div align="center">
   
