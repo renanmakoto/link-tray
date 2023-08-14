@@ -4,6 +4,8 @@
 
 <p align="center">You may have a look at the application through the link below: </p>
 
+<p align="center">https://viktordanko.netlify.app</p>
+
 <div align="center">
   
 TECHNOLOGIES USED:
