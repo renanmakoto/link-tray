@@ -184,6 +184,14 @@ ul li a {
   margin-left: 20px;
 }
 
+#tiktok-icon {
+  max-width: 35px;
+}
+
+#tiktok-link {
+  margin-left: 20px;
+}
+
 #livro-icon {
   max-width: 34px;
   border-radius: 20px;
