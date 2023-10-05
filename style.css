@@ -217,6 +217,15 @@ ul li a {
   margin-left: 20px;
 }
 
+#minipod-icon {
+  max-width: 30px;
+  border-radius: 20px;
+}
+
+#minipod-link {
+  margin-left: 20px;
+}
+
 #linkedin-icon {
   max-width: 34px;
 }
