@@ -234,6 +234,15 @@ ul li a {
   margin-left: 20px;
 }
 
+#catarse-icon {
+  max-width: 34px;
+  border-radius: 20px;
+}
+
+#catarse-link {
+  margin-left: 20px;
+}
+
 /* pseudo-selector */
 ul li a:hover {
   background: var(--surface-color-hover);
