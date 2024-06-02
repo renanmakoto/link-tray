@@ -26,6 +26,10 @@
 
 body {
   background: var(--bg-url) no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body * {
@@ -36,8 +40,8 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 0 56px auto 0px;
   padding: 0 24px;
+  text-align: center;
 }
 
 #profile {
