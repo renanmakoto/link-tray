@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat center/cover;
+  height: 55rem;
 }
 
 body * {
