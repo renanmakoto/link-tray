@@ -119,6 +119,24 @@ ul li a {
   margin-left: 20px;
 }
 
+#antologia-icon {
+  max-width: 40px;
+  border-radius: 20px;
+}
+
+#antologia-link {
+  margin-left: 20px;
+}
+
+#brasil_despedacado-icon {
+  max-width: 40px;
+  border-radius: 20px;
+}
+
+#brasil_despedacado-link {
+  margin-left: 20px;
+}
+
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
