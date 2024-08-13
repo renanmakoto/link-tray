@@ -137,6 +137,15 @@ ul li a {
   margin-left: 20px;
 }
 
+#coletanea-icon {
+  max-width: 40px;
+  border-radius: 200px;
+}
+
+#coletanea-link {
+  margin-left: 20px;
+}
+
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
