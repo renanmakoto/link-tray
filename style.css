@@ -195,6 +195,10 @@ footer {
   margin-top: 50px;
 }
 
+#footerLink {
+  text-decoration: none;
+}
+
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
