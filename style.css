@@ -26,10 +26,12 @@
 
 body {
   background: var(--bg-url) no-repeat center/cover;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 80px;
 }
 
 body * {
@@ -42,6 +44,7 @@ body * {
   max-width: 588px;
   padding: 0 24px;
   text-align: center;
+  flex: 1;
 }
 
 #profile {
@@ -106,6 +109,18 @@ p {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 9999px;
 }
+
+#qrcode {
+  width: 100px; /* Adjust the size as needed */
+  margin-top: 20px; /* Space between the switch and the QR code */
+  border-radius: 8px; /* Slight rounding of the QR code corners */
+  transition: transform 0.3s ease-in-out;
+}
+
+#qrcode:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 
 ul {
   list-style: none;
@@ -192,8 +207,10 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
-  margin-top: 50px;
+  margin-top: auto;
+  width: 100%;
 }
+
 
 #footerLink {
   text-decoration: none;
