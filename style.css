@@ -111,14 +111,14 @@ p {
 }
 
 #qrcode {
-  width: 150px; /* Adjust the size as needed */
-  margin-top: 20px; /* Space between the switch and the QR code */
-  border-radius: 8px; /* Slight rounding of the QR code corners */
+  width: 150px;
+  margin-top: 20px;
+  border-radius: 8px;
   transition: transform 0.3s ease-in-out;
 }
 
 #qrcode:hover {
-  transform: scale(1.2); /* Slight zoom effect on hover */
+  transform: scale(1.2);
 }
 
 
