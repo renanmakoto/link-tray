@@ -40,6 +40,27 @@ body * {
   color: var(--text-color);
 }
 
+#email {
+  display: block;
+  margin-top: 50px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;  /* Makes the email text bolder */
+  font-size: 1.1rem;  /* Slightly increases the font size */
+  padding: 10px;      /* Adds some padding around the link */
+  border-radius: 8px; /* Rounds the corners */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background */
+  transition: all 0.3s ease-in-out;  /* Smooth transition for hover */
+}
+
+#email:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Changes background on hover */
+  text-decoration: underline;  /* Underlines text on hover */
+  transform: scale(1.05);  /* Slightly enlarges the link on hover */
+}
+
+
+
 #container {
   width: 100%;
   max-width: 588px;
