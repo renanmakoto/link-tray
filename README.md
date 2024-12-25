@@ -4,7 +4,7 @@
 
 <p align="center">You may have a look at the application through the link below: </p>
 
-<p align="center">https://viktordanko.netlify.app</p>
+<p align="center">https://viktordanko.com.br</p>
 
 <div align="center">
   
