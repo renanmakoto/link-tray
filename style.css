@@ -50,7 +50,7 @@ body * {
   padding: 10px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease-in-out;  /* Smooth transition for hover */
+  transition: all 0.3s ease-in-out;
 }
 
 #email:hover {
