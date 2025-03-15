@@ -46,7 +46,7 @@ body * {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  font-size: 1.1rem;  /* Slightly increases the font size */
+  font-size: 1.1rem;
   padding: 10px;      /* Adds some padding around the link */
   border-radius: 8px; /* Rounds the corners */
   background-color: rgba(255, 255, 255, 0.1); /* Light background */
