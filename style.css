@@ -45,7 +45,7 @@ body * {
   margin-top: 50px;
   text-decoration: none;
   color: var(--text-color);
-  font-weight: 500;  /* Makes the email text bolder */
+  font-weight: 500;
   font-size: 1.1rem;  /* Slightly increases the font size */
   padding: 10px;      /* Adds some padding around the link */
   border-radius: 8px; /* Rounds the corners */
