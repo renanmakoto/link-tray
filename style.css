@@ -54,7 +54,7 @@ body * {
 }
 
 #email:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Changes background on hover */
+  background-color: rgba(255, 255, 255, 0.3);
   text-decoration: underline;  /* Underlines text on hover */
   transform: scale(1.05);  /* Slightly enlarges the link on hover */
 }
