@@ -140,15 +140,6 @@ ul li a {
   margin-left: 20px;
 }
 
-#coracao-icon {
-  max-width: 40px;
-  border-radius: 200px;
-}
-
-#coracao-link {
-  margin-left: 20px;
-}
-
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
