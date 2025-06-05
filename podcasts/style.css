@@ -154,6 +154,15 @@ ul li a {
   margin-left: 20px;
 }
 
+#pl23-icon {
+  max-width: 35px;
+  border-radius: 20px;
+}
+
+#pl23-link {
+  margin-left: 20px;
+}
+
 #returnBtn {
   font-size: 50px;
   text-decoration: none;
