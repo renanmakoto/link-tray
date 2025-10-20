@@ -1,71 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/frame.png">
     <link rel="stylesheet" href="./style.css">
     <title>Viktor Danko</title>
-
   </head>
   <body>
-    <div id="container">
-      <div id="profile">
-        <img src="./assets/avatar.jpg" alt="viktor Danko smiling.">
-        <h4>@dankoviktor</h4>
+    <main id="container">
+      <button
+        id="theme-toggle"
+        type="button"
+        class="theme-toggle"
+        aria-pressed="false"
+        aria-label="Alternar tema"
+      >
+        <span class="toggle-track"></span>
+        <span class="toggle-thumb"></span>
+      </button>
+
+      <section id="profile" aria-labelledby="profile-title">
+        <div class="avatar-frame">
+          <img src="./assets/avatar.jpg" alt="Viktor Danko sorrindo." />
+        </div>
+        <h1 id="profile-title">@dankoviktor</h1>
         <p id="paragraph">Cineasta frustrado, só uso preto.</p>
-      </div>
+        <a href="mailto:viktor_danko@hotmail.com" id="email">viktor_danko@hotmail.com</a>
+      </section>
 
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span></span>
-      </div>
+      <section class="donation" aria-label="Doação">
+        <p>Faça uma doação! Ajude este cineasta a não ser mais frustrado!</p>
+        <img src="./assets/qrcode_pix_viktor.png" alt="QR Code para PIX do Viktor Danko." id="qrcode">
+      </section>
 
-      <a href="mailto:viktor_danko@hotmail.com" id="email">viktor_danko@hotmail.com</a>
+      <section class="links" aria-label="Links principais">
+        <ul class="link-grid">
+          <li>
+            <a
+              class="link-card"
+              href="/books/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="./assets/books.png" alt="Ícone de pilha de livros." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Livros</span>
+                <span class="link-description">Coleção de obras e publicações.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-      <p>Faça uma doação! Ajude este cineasta a não ser mais frustrado!</p>
-      <img src="./assets/qrcode_pix_viktor.png" alt="QR Code" id="qrcode">
+          <li>
+            <a
+              class="link-card"
+              href="./social_media/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="./assets/social-media.png" alt="Ícone de rede social em malha." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Redes Sociais</span>
+                <span class="link-description">Acompanhe meus perfis ativos.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-      <ul>
-        <li>
-          <a href="/books/index.html" target="_blank">
-          <div><img id="books-icon" src="./assets/books.png"></div>
-            <div id="books-link">Livros</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://www.youtube.com/watch?v=Spf3sNTSWfk&list=PLZam0zUzkErhjwsaZqqJw51oUB1z9GaaX"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="./assets/yt.png" alt="Ícone do YouTube estilizado." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Palestras</span>
+                <span class="link-description">Talks sobre cinema e cultura pop.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="./social_media/index.html" target="_blank">
-            <div><img id="social-icon" src="./assets/social-media.png"></div>
-            <div id="social-link">Redes Sociais</div>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.youtube.com/watch?v=Spf3sNTSWfk&list=PLZam0zUzkErhjwsaZqqJw51oUB1z9GaaX" target="_blank">
-            <div><img id="yt-icon" src="./assets/yt.png"></div>
-            <div id="yt-link">Palestras</div>
-          </a>
-        </li>
-
-        <li>
-          <a href="./podcasts/index.html" target="_blank">
-            <div><img id="spotify-icon" src="./assets/spotify.png"></div>
-            <div id="spotify-link">Podcasts</div>
-          </a>
-        </li>
-    
-      </ul>
+          <li>
+            <a
+              class="link-card"
+              href="./podcasts/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="./assets/spotify.png" alt="Ícone verde do Spotify." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Podcasts</span>
+                <span class="link-description">Entrevistas e participações recentes.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
       <footer>
-        2023 - With ♥ by <a href="https://renanmakoto.com/" target="_blank" id="footerLink">dotExtension</a>
+        2024 · With ♥ by <a href="https://renanmakoto.com/" target="_blank" rel="noopener noreferrer" id="footerLink">dotExtension</a>
       </footer>
-    </div>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

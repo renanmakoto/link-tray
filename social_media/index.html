@@ -1,62 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/like.png">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./style.css">
     <title>Viktor Danko - Redes Sociais</title>
-
   </head>
   <body>
-    <div id="container">
-      <div id="profile">
-        <p id="paragraph">Minhas redes sociais.</p>
-      </div>
-      <ul>
-        <li>
-          <a href="http://lattes.cnpq.br/5279983340481568" target="_blank">
-            <div><img id="lattes-icon" src="../assets/lattes-icon.png"></div>
-            <div id="lattes-link">Lattes</div>
-          </a>
-        </li>
+    <main id="container">
+      <section id="profile" aria-labelledby="social-title">
+        <h1 id="social-title">Minhas redes</h1>
+        <p id="paragraph">Onde compartilho pesquisas, bastidores e provocações audiovisuais.</p>
+      </section>
 
-        <li>
-          <a href="https://www.tiktok.com/@dankoviktor" target="_blank">
-            <div><img id="tiktok-icon" src="../assets/tik-tok.png"></div>
-            <div id="tiktok-link">TikTok</div>
-          </a>
-        </li>
+      <section class="links" aria-label="Perfis sociais">
+        <ul class="link-grid">
+          <li>
+            <a
+              class="link-card"
+              href="http://lattes.cnpq.br/5279983340481568"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/lattes-icon.png" alt="Logotipo da plataforma Lattes." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Currículo Lattes</span>
+                <span class="link-description">Trajetória acadêmica e publicações oficiais.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://anhembi.academia.edu/ViktorDankoPerkusichNovaes" target="_blank">
-            <div><img id="artigo-icon" src="../assets/academia-edu.png"></div>
-            <div id="artigo-link">Meus artigos</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://www.tiktok.com/@dankoviktor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/tik-tok.png" alt="Logotipo do TikTok." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">TikTok</span>
+                <span class="link-description">Drops rápidos sobre cinema e cultura pop.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://www.linkedin.com/in/viktor-danko-perkusich-novaes/" target="_blank">
-            <div><img id="linkedin-icon" src="../assets/linkedin.png"></div>
-            <div id="linkedin-link">LinkedIn - Viktor Danko</div>
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a
+              class="link-card"
+              href="https://anhembi.academia.edu/ViktorDankoPerkusichNovaes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/academia-edu.png" alt="Logotipo da plataforma Academia.edu." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Artigos Acadêmicos</span>
+                <span class="link-description">Pesquisas e textos críticos publicados.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-      <a id="returnBtn" href="../index.html">&crarr;</a>
+          <li>
+            <a
+              class="link-card"
+              href="https://www.linkedin.com/in/viktor-danko-perkusich-novaes/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/linkedin.png" alt="Logotipo do LinkedIn." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">LinkedIn</span>
+                <span class="link-description">Networking e colaborações profissionais.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <a class="return-link" href="../index.html">← Voltar para a página principal</a>
 
       <footer>
-        2024 - With ♥ by <a href="https://renanmakoto.com/" target="_blank">dotExtension</a>
+        2024 · With ♥ by <a href="https://renanmakoto.com/" target="_blank" rel="noopener noreferrer">dotExtension</a>
       </footer>
-    </div>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./script.js"></script>
   </body>
 </html>

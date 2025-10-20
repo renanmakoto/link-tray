@@ -1,98 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../assets/podcast.png">
-    <link rel="stylesheet" href="/podcasts/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Viktor Danko - Podcasts</title>
-
   </head>
   <body>
-    <div id="container">
-      <div id="profile">
-        <p id="paragraph">Aqui você encontra todos os podcasts em que participei.</p>
-      </div>
+    <main id="container">
+      <section id="profile" aria-labelledby="podcast-title">
+        <h1 id="podcast-title">Podcasts &amp; entrevistas</h1>
+        <p id="paragraph">Uma curadoria de conversas que amplificam debates sobre narrativa e imaginação.</p>
+      </section>
 
-      <ul>
-        <li>
-          <a href="https://open.spotify.com/show/4myzB5pIO44Ome7XWvweIf?si=3df3febfb060452d&nd=1" target="_blank">
-            <div><img id="miyazaki-icon" src="../assets/miyazaki.jpeg"></div>
-            <div id="miyazaki-link">Miyazaki Revisitado</div>
-          </a>
-        </li>
+      <section class="links" aria-label="Lista de podcasts com Viktor Danko">
+        <ul class="link-grid">
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/show/4myzB5pIO44Ome7XWvweIf?si=3df3febfb060452d&nd=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/miyazaki.jpeg" alt="Capa do podcast Miyazaki Revisitado." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Miyazaki Revisitado</span>
+                <span class="link-description">Análises sobre os universos de Hayao Miyazaki.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/218ZK04YisPevU1p76kzLc?si=yfsR6mbZTHS1KReH6Exuzg" target="_blank">
-            <div><img id="minipod-icon" src="../assets/minipod.png"></div>
-            <div id="minipod-link">Minipod Literário - Eduardo Spohr</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/218ZK04YisPevU1p76kzLc?si=yfsR6mbZTHS1KReH6Exuzg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/minipod.png" alt="Capa do episódio Minipod Literário - Eduardo Spohr." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Minipod Literário</span>
+                <span class="link-description">Conversas sobre literatura fantástica com Eduardo Spohr.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/7fiDCLri6pww9Ak7ESLbmt?si=NbmlUSr8QH2sUKdr50ejZQ&nd=1&dlsi=3ea562c92cce4ca3" target="_blank">
-            <div><img id="pl1-icon" src="../assets/pl1.png"></div>
-            <div id="pl1-link">PL 01 - Conan, o Bárbaro de Robert E. Howard (PARTE 1)</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/7fiDCLri6pww9Ak7ESLbmt?si=NbmlUSr8QH2sUKdr50ejZQ&nd=1&dlsi=3ea562c92cce4ca3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/pl1.png" alt="Arte do episódio PL 01 - Conan, o Bárbaro." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">PL 01 · Conan</span>
+                <span class="link-description">Parte 1 sobre o herói de Robert E. Howard.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/4m5fPIS5LAbTPxFe2SXbqR?si=cQmaAp55QUazEPRd5yy4EQ&nd=1&dlsi=1db89d78362147c2" target="_blank">
-            <div><img id="pl2-icon" src="../assets/pl2.png"></div>
-            <div id="pl2-link">PL 02 - Conan, o Bárbaro de Robert E. Howard (PARTE 2)</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/4m5fPIS5LAbTPxFe2SXbqR?si=cQmaAp55QUazEPRd5yy4EQ&nd=1&dlsi=1db89d78362147c2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/pl2.png" alt="Arte do episódio PL 02 - Conan, o Bárbaro." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">PL 02 · Conan</span>
+                <span class="link-description">Parte 2 concluindo a saga do bárbaro.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/4q5Ipy9JBZZjNq80alwl4t?si=RIDS432qSNike3yCY94OXw&nd=1&dlsi=0bf5f42580a9419e" target="_blank">
-            <div><img id="pl4-icon" src="../assets/pl4.png"></div>
-            <div id="pl4-link">PL 04 - Viagem ao Centro da Terra de Jules Verne</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/4q5Ipy9JBZZjNq80alwl4t?si=RIDS432qSNike3yCY94OXw&nd=1&dlsi=0bf5f42580a9419e"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/pl4.png" alt="Arte do episódio PL 04 - Viagem ao Centro da Terra." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">PL 04 · Viagem ao Centro da Terra</span>
+                <span class="link-description">Jules Verne sob uma ótica de fantasia científica.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/4MYRfPo6nvEfK3tGQVY2lD?si=3RYz4IzBQ3CLhoFXPm6C4A&nd=1&dlsi=32314367ecd04979" target="_blank">
-            <div><img id="pl11-icon" src="../assets/pl11.png"></div>
-            <div id="pl11-link">PL 11 - Rei Kull por Robert E. Howard</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/4MYRfPo6nvEfK3tGQVY2lD?si=3RYz4IzBQ3CLhoFXPm6C4A&nd=1&dlsi=32314367ecd04979"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/pl11.png" alt="Arte do episódio PL 11 - Rei Kull." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">PL 11 · Rei Kull</span>
+                <span class="link-description">Debate sobre o monarca criado por Howard.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/5CraqRfTSb7mH2o532Z31P?si=fH1FlVaSS06lfKmDIb971Q&nd=1&dlsi=e3cd55d55ed54fe2" target="_blank">
-            <div><img id="spyro-icon" src="../assets/spyro.png"></div>
-            <div id="spyro-link">3 Continues #56 - Spyro no PS1</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/5CraqRfTSb7mH2o532Z31P?si=fH1FlVaSS06lfKmDIb971Q&nd=1&dlsi=e3cd55d55ed54fe2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/spyro.png" alt="Arte do episódio 3 Continues - Spyro no PS1." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">3 Continues #56</span>
+                <span class="link-description">Uma nostalgia gamer sobre Spyro no Playstation 1.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/3ayg1F74I2kIQ74idie8UH?si=V9hbSe0jRZSaMKUhQ-dzmA&nd=1&dlsi=274b4abc5ea34e6d" target="_blank">
-            <div><img id="coraline-icon" src="../assets/coraline.png"></div>
-            <div id="coraline-link">#10|"Coraline e o Mundo Secreto" &#10148; Sobre gatos, traumas infantis e muita animação!</div>
-          </a>
-        </li>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/3ayg1F74I2kIQ74idie8UH?si=V9hbSe0jRZSaMKUhQ-dzmA&nd=1&dlsi=274b4abc5ea34e6d"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/coraline.png" alt="Arte do episódio Coraline e o Mundo Secreto." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">Coraline e o Mundo Secreto</span>
+                <span class="link-description">Sobre gatos, traumas infantis e muita animação.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
 
-        <li>
-          <a href="https://open.spotify.com/episode/0dCXtuJsdr5rg6saV7weig?nd=1&dlsi=2c0a0c143b014406" target="_blank">
-            <div><img id="pl23-icon" src="../assets/pl23.png"></div>
-            <div id="pl23-link">PL 23 (Nacional) - Corpo Estranho de Viktor Danko</div>
-          </a>
-        </li>
-      </ul>
+          <li>
+            <a
+              class="link-card"
+              href="https://open.spotify.com/episode/0dCXtuJsdr5rg6saV7weig?nd=1&dlsi=2c0a0c143b014406"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="link-icon">
+                <img src="../assets/pl23.png" alt="Arte do episódio PL 23 - Corpo Estranho." />
+              </span>
+              <span class="link-text">
+                <span class="link-title">PL 23 · Corpo Estranho</span>
+                <span class="link-description">Comentário sobre minha obra nacional Corpo Estranho.</span>
+              </span>
+              <span class="link-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-      <a id="returnBtn" href="../index.html">&crarr;</a>
+      <a class="return-link" href="../index.html">← Voltar para a página principal</a>
 
       <footer>
-        2024 - With ♥ by <a href="https://renanmakoto.com/" target="_blank">dotExtension</a>
+        2024 · With ♥ by <a href="https://renanmakoto.com/" target="_blank" rel="noopener noreferrer">dotExtension</a>
       </footer>
-    </div>
+    </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./script.js"></script>
   </body>
 </html>
