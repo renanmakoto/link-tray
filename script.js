@@ -1,13 +1,52 @@
 const htmlElement = document.documentElement;
-const themeToggleButton = document.querySelector("#theme-toggle");
-const profileParagraph = document.querySelector("#paragraph");
-const profileImage = document.querySelector("#profile img");
+const themeToggleButton = document.querySelector("[data-theme-toggle]");
+const textSyncElements = Array.from(
+  document.querySelectorAll("[data-theme-light-text], [data-theme-dark-text]")
+);
+const imageSyncElements = Array.from(
+  document.querySelectorAll("[data-theme-light-src], [data-theme-dark-src]")
+);
 
 const THEME_STORAGE_KEY = "preferred-theme";
-const profileCopy = {
-  dark: "Cineasta frustrado, só uso preto.",
-  light: "Se o fundo é claro, o humor continua sombrio."
-};
+
+textSyncElements.forEach((element) => {
+  if (!element.dataset.themeOriginalText) {
+    element.dataset.themeOriginalText = element.textContent;
+  }
+});
+
+imageSyncElements.forEach((element) => {
+  if (!element.dataset.themeOriginalSrc) {
+    const currentSrc = element.getAttribute("src");
+    if (currentSrc !== null) {
+      element.dataset.themeOriginalSrc = currentSrc;
+    }
+  }
+});
+
+function syncCustomTargets(isLight) {
+  textSyncElements.forEach((element) => {
+    const fallback = element.dataset.themeOriginalText ?? "";
+    const lightText = element.dataset.themeLightText ?? fallback;
+    const darkText = element.dataset.themeDarkText ?? fallback;
+    const nextText = isLight ? lightText : darkText;
+
+    if (element.textContent !== nextText) {
+      element.textContent = nextText;
+    }
+  });
+
+  imageSyncElements.forEach((element) => {
+    const fallback = element.dataset.themeOriginalSrc ?? element.getAttribute("src") ?? "";
+    const lightSrc = element.dataset.themeLightSrc ?? fallback;
+    const darkSrc = element.dataset.themeDarkSrc ?? fallback;
+    const nextSrc = isLight ? lightSrc : darkSrc;
+
+    if (nextSrc && element.getAttribute("src") !== nextSrc) {
+      element.setAttribute("src", nextSrc);
+    }
+  });
+}
 
 function applyTheme(mode, options = {}) {
   const { persist = true } = options;
@@ -18,13 +57,7 @@ function applyTheme(mode, options = {}) {
     themeToggleButton.setAttribute("aria-pressed", String(isLight));
   }
 
-  if (profileParagraph) {
-    profileParagraph.textContent = isLight ? profileCopy.light : profileCopy.dark;
-  }
-
-  if (profileImage) {
-    profileImage.setAttribute("src", isLight ? "./assets/avatar-light.jpg" : "./assets/avatar.jpg");
-  }
+  syncCustomTargets(isLight);
 
   if (persist) {
     try {
@@ -42,11 +75,10 @@ function resolveInitialTheme() {
       return saved;
     }
   } catch {
-    // Ignora erro de acesso ao localStorage e segue para preferência do sistema
+    // Ignora erro de acesso ao localStorage e usa o tema padrão
   }
 
-  const prefersLight = window.matchMedia?.("(prefers-color-scheme: light)").matches;
-  return prefersLight ? "light" : "dark";
+  return "dark";
 }
 
 function toggleMode() {

@@ -19,6 +19,7 @@
         class="theme-toggle"
         aria-pressed="false"
         aria-label="Alternar tema"
+        data-theme-toggle
       >
         <span class="toggle-track"></span>
         <span class="toggle-thumb"></span>
@@ -26,10 +27,20 @@
 
       <section id="profile" aria-labelledby="profile-title">
         <div class="avatar-frame">
-          <img src="./assets/avatar.jpg" alt="Viktor Danko sorrindo." />
+          <img
+            src="./assets/avatar.jpg"
+            alt="Viktor Danko sorrindo."
+            data-theme-light-src="./assets/avatar-light.jpg"
+          />
         </div>
         <h1 id="profile-title">@dankoviktor</h1>
-        <p id="paragraph">Cineasta frustrado, só uso preto.</p>
+        <p
+          id="paragraph"
+          data-theme-light-text="Se o fundo é claro, o humor continua sombrio."
+          data-theme-dark-text="Cineasta frustrado, só uso preto."
+        >
+          Cineasta frustrado, só uso preto.
+        </p>
         <a href="mailto:viktor_danko@hotmail.com" id="email">viktor_danko@hotmail.com</a>
       </section>
 

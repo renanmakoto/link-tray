@@ -24,6 +24,8 @@
   --thumb-icon: url(./assets/moon-stars.svg);
   --avatar-ring: conic-gradient(from 180deg at 50% 50%, rgba(56, 189, 248, 0.85), rgba(244, 114, 182, 0.85));
   --stroke-soft: rgba(148, 163, 184, 0.25);
+  --footer-link-color: #38bdf8;
+  --footer-link-hover: #f472b6;
 }
 
 .light {
@@ -46,6 +48,8 @@
   --thumb-icon: url(./assets/sun.svg);
   --avatar-ring: conic-gradient(from 180deg at 50% 50%, rgba(14, 165, 233, 0.7), rgba(249, 115, 22, 0.7));
   --stroke-soft: rgba(148, 163, 184, 0.22);
+  --footer-link-color: #38bdf8;
+  --footer-link-hover: #f472b6;
 }
 
 body {
@@ -375,14 +379,14 @@ footer {
 }
 
 #footerLink {
-  color: var(--accent-color);
+  color: var(--footer-link-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 #footerLink:hover {
-  color: var(--accent-contrast);
+  color: var(--footer-link-hover);
 }
 
 @media (min-width: 768px) {

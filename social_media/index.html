@@ -14,6 +14,18 @@
   </head>
   <body>
     <main id="container">
+      <button
+        id="theme-toggle"
+        type="button"
+        class="theme-toggle"
+        aria-pressed="false"
+        aria-label="Alternar tema"
+        data-theme-toggle
+      >
+        <span class="toggle-track"></span>
+        <span class="toggle-thumb"></span>
+      </button>
+
       <section id="profile" aria-labelledby="social-title">
         <h1 id="social-title">Minhas redes</h1>
         <p id="paragraph">Onde compartilho pesquisas, bastidores e provocações audiovisuais.</p>
@@ -98,11 +110,12 @@
       <a class="return-link" href="../index.html">← Voltar para a página principal</a>
 
       <footer>
-        2024 · With ♥ by <a href="https://renanmakoto.com/" target="_blank" rel="noopener noreferrer">dotExtension</a>
+        2024 · With ♥ by <a href="https://renanmakoto.com/" target="_blank" rel="noopener noreferrer" id="footerLink">dotExtension</a>
       </footer>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
