@@ -36,9 +36,9 @@ body::after {
 }
 
 .link-card .link-icon img {
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
 }
 
 .return-link {
